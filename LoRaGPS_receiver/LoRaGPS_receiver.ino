@@ -1,5 +1,4 @@
 // Modified by Stig Sivertsen
-//#include <SPI.h>
 #include <RH_RF95.h>
 
 // Lookup RH_RF95.h for pin Slave Select and pin interrupt ovveride.

@@ -1,5 +1,4 @@
 // Modified by Stig Sivertsen
-//#include <SPI.h>
 #include <RH_RF95.h>
 
 // Lookup RH_RF95.h for pin Slave Select and pin interrupt ovveride.
@@ -58,7 +57,6 @@ void loop()
     dtostrf(DataToSend.lng, 0, 6, lng);
         
     char buf[45];
-    //sprintf(buf,"%s %s %c", lat, lng, char(DataToSend.sats));
     sprintf(buf,"LAT: %s\, LNG: %s\, Sats: %c", lat, lng, char(DataToSend.sats));
     Serial.println(String("Buf: ") + buf);
     lastSendTime = now;
